@@ -96,3 +96,11 @@ The backend exposes a single, internal routing endpoint to manually trigger the 
 - **Route:** `/run`
 - **Controller Action:** Activates the application's core assignment logic. When routing to this endpoint, the backend will initiate the ten polling requests sequentially, enforce the mandatory five-second delay between each external validator request, dynamically tabulate the array results, and execute a post request of the final leaderboard payload to the `quiz/submit` gateway.
 - **Expected Return:** Returns a plain text confirmation containing the raw stringified JSON response explicitly captured from the external validator system post-submission.
+---
+
+## Author
+
+**Name:** Dodda Likhith Reddy  
+**Registration No:** RA2311003020454  
+**Institution:** SRM Institute of Science and Technology  
+**Assignment:** Bajaj Finserv Health Java Qualifier, April 2026
