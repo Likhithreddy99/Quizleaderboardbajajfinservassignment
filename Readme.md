@@ -48,3 +48,25 @@ Once the data is fully processed and sorted, the system packages the leaderboard
 4. The backend process will execute automatically. Monitor the terminal console to observe the iterative data fetching, the total aggregation logic, and the final submission status.
 
 Ensure you update the registration number variable inside the Logic.java file to your actual assigned registration sequence before executing the code.
+
+## Requirements Checklist
+
+| Requirement | Status |
+|---|---|
+| Poll API exactly 10 times (index 0-9) | Done |
+| 5-second delay between polls | Done |
+| Deduplicate using roundId + participant | Done |
+| Aggregate scores per participant | Done |
+| Sort leaderboard by total score | Done |
+| Submit leaderboard exactly once | Done |
+
+## API Reference
+
+The backend exposes a single, internal routing endpoint to manually trigger the sequence for evaluation.
+
+### Initialization Endpoint
+
+- **HTTP Method:** `GET`
+- **Route:** `/run`
+- **Controller Action:** Activates the application's core assignment logic. When routing to this endpoint, the backend will initiate the ten polling requests sequentially, enforce the mandatory five-second delay between each external validator request, dynamically tabulate the array results, and execute a post request of the final leaderboard payload to the `quiz/submit` gateway.
+- **Expected Return:** Returns a plain text confirmation containing the raw stringified JSON response explicitly captured from the external validator system post-submission.
