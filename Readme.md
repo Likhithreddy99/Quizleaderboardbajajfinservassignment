@@ -36,6 +36,32 @@ After the fifty-second data gathering phase concludes, the system transfers the 
 ### Final Submission
 Once the data is fully processed and sorted, the system packages the leaderboard into a JSON object format. It executes a single HTTP POST request to transmit the final array to the external submission endpoint for validation.
 
+## Project Structure
+
+```text
+Quizleaderboardbajajfinservassignment
+├── Pom.xml
+├── Readme.md
+└── Src
+    └── Main
+        ├── Java
+        │   └── Com
+        │       └── App
+        │           ├── Application.java
+        │           ├── Configuration
+        │           │   └── Setup.java
+        │           ├── Controller
+        │           │   └── Api.java
+        │           ├── Model
+        │           │   └── Item.java
+        │           ├── Repository
+        │           │   └── Store.java
+        │           └── Service
+        │               └── Logic.java
+        └── Resources
+            └── Application.properties
+```
+
 ## Technology Stack
 - Java 17
 - Spring Boot 3.2.4
