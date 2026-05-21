@@ -1,6 +1,6 @@
-# Bajaj Finserv Quiz Leaderboard Assignment
+# Quiz Leaderboard System 
 
-This is the backend implementation for the Bajaj Finserv SRM Quiz task. 
+This is the backend implementation for the Quiz Leaderboard System 
 
 ## The Problem Explained
 
@@ -103,4 +103,4 @@ The backend exposes a single, internal routing endpoint to manually trigger the 
 **Name:** Dodda Likhith Reddy  
 **Registration No:** RA2311003020454  
 **Institution:** SRM Institute of Science and Technology  
-**Assignment:** Bajaj Finserv Health Java Qualifier, April 2026
+
